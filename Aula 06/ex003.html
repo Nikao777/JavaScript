@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom, black 0%, red 50%, green 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Já me livrei da Maldição</p>
+    <script>
+        let num1 = Number.parseInt(prompt('Digite um Número'));//Number irá transformar o Item digitado em Número
+        let num2 = Number(prompt('Digite outro Número'));//o "prompt" retorna uma String
+        let res = num1 + num2
+        alert (`A Soma entre ${num1} e ${num2} é igual a ${res}`);
+        //res.toString() ou String(res), Ambos Convertem para String
+        // Number + Number para Adição
+        // String = String para Cncatenação
+    </script>
+</body>
+</html>

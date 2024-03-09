@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let nome = prompt('Qual o seu nome?')
+        document.write(`Olá, ${nome} seu nome tem ${nome.length} Letras <br/>`);
+        document.write(`O seu nome em Maiúculo é ${nome.toUpperCase()}<br/>`);
+        document.write(`O seu nome em Minúsculo é ${nome.toLowerCase()}<br/><br/>`);
+        
+        //num.toFixed(2) para colocar dois numeros depois da Vigula
+
+        //num.toFixes(2).replace('.',',') irá trocar simbolos se colocar o qe quer trocar nas primeiras Aspas pelos da Seguna
+
+        //num.toLocalString('pt-br', {style: "currency",currency: 'BRL' }) 1º para qual país quer Localizar, 2º style: "currency = Dinheiro", currency: 'Nome da Moeda', ex: BRL: Reais, USD: Dólar, EUR: Euro
+    </script>
+</body>
+</html>

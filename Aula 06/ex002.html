@@ -6,12 +6,12 @@
     <title>Meu Primeiro Programa</title>
     <style>
         body{
-            background: linear-gradient(120deg, black 0%, red 100%);
+            background: linear-gradient(120deg, black 0%, red 50%, green 100%);
+            background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
-            margin-left: 2.0em;
         }
     </style>
 </head>
@@ -19,9 +19,8 @@
     <h1>Hello World!</h1>
     <p>Já me livrei da Maldição</p>
     <script>
-        alert('Minha Primera Mensagem!');
-        confirm('Está gostando de Js?');
-        prompt('Qual o seu nome?');
+        let nome = prompt('Qual o seu nome?');
+        alert(`Olá ${nome}`);//Concatenação
     </script>
 </body>
 </html>
