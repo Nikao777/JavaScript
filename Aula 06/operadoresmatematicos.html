@@ -1,92 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(180deg, crimson 0%, red 50%, darkred 100%);
-            color: white;
-            background-repeat: no-repeat;
-            height: 100vh;
-        }
-        h1{
-            text-align: center;
-        }
-        p{
-            margin-left: 10px;
-        }
-        ol, ul{
-            list-style: none;
-        }
-        table{
-            border-collapse: collapse;
-            margin: auto;
-            margin-top: 40px;
-        }
-        th, td{
-            border: 1px solid white;
-            font-weight: bold;
-            text-align: center;
-            font-size: 18px;
-            padding: 20px;
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, crimson 0%, red 50%, darkred 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        height: 100vh;
+        width: 96vw;
+
+      }
+      .tabela{
+        overflow-x: scroll
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        margin-left: 10px;
+      }
+      ol,
+      ul {
+        list-style: none;
+        line-height: 1.5em;
+      }
+      table {
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 40px;
+        padding: 1.5em;
+      }
+      th,
+      td {
+        border: 1px solid white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+      }
+      strong{
+        font-size: 1.3em;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Ordem de Procedencia dos Símbolos Maemáticos e JS</h1>
+    
     <ol>
-        <li>'()', tudo no Parenteses tem a Prioridade</li>
-        <li>'**', Números Elevados</li>
-        <li>'*', Multiplicação, '/', Divisão, '%', Resto da Divisão</li>
-        <li>'+'' e '-'</li>
+      <h2>Operadores Matemáticos</h2>
+      <li>'()', tudo no Parenteses tem a Prioridade</li>
+      <li>'**', Números Elevados</li>
+      <li>'*', Multiplicação, '/', Divisão, '%', Resto da Divisão</li>
+      <li>'+'' e '-'</li>
+      <p>
+        N1 += 20: Mesma coisa que N1 = N1 + 20, Mesma coisa para os Outros
+        Símbolos
+      </p>
     </ol>
-    <p> N1 += 20: Mesma coisa que N1 = N1 + 20, Mesma coisa para os Outros Símbolos</p>
+    </p>
+
     <ul>
-        <p>Incrementos:</p>
-        <li>x++: Mesma Coisa que x + 1, como se estivesse em um for e só qunado eleacabar o número será Incrementado</li>
-        <li>x--: Masma Coisa que x - 1</li>
+      <h2>Incrementos:</h2>
+      <li>
+        x++: Mesma Coisa que x + 1, como se estivesse em um for e só qunado
+        eleacabar o número será Incrementado
+      </li>
+      <li>x--: Masma Coisa que x - 1</li>
+    </ul>
+
+    <ul>
+      <h2>Pré-Incrementos:</h2>
+      <li>++x: Mesma Coisa que x + 1, mas ela ocorre antes</li>
+      <li>--x: Masma Coisa que x - 1</li>
+    </ul>
+
+    <ul>
+        <h2>Operadores Relacionais:</h2>
+        <li>>, maior que</li>
+        <li><, menor que</li>
+        <li>>=, maior ou igual</li>
+        <li><=, menor ou igual</li>
+        <li>==, igual: não impota que é numero ou numero String</li>
+        <li>!=, diferente</li>
+        <li>===, identico: para dizer se são iguais caso o Outro seja String</li>
+
+    </ul>
+
+    <ul>
+        <h2>Operadores Lógicos:</h2>
+        <li>!, 'Não': se a pergunta de Verdadeiro ou Falso pede a Resposta Contraria.</br>
+            Ex:Quero uma caneta mas ela 'NÃO' pode ser Azul, ou seja, ela Pode ser: Preta, Vermelha, Verde, Tudo, Menos Azul</br></br>
+        </li>
+
+        <li>&& = 'e', Conjunção: os Dois tem que ser Verdadeiros</br>Ex:Quero uma Caneta Azul "E" uma Caneta Vermelha, só Ficarei Satisfeito com Ambas</br></br></li>
+
+        <li>|| = 'ou', Disjunção: Qualquer um satisfaz a Pergunta. Ex:</br> Quero uma Caneta Azul "OU" uma Caneta Vermelha, com os Dois Estarei Satisfeito</li>
     </ul>
     <ul>
-        <p>Pré-Incrementos:</p>
-        <li>++x: Mesma Coisa que x + 1, mas ela ocorre antes</li>
-        <li>--x: Masma Coisa que x - 1</li>
+        <h2>Operador Ternário</h2>
+        <li>
+            ? e :, Ambos na Mesma Linha.</br>Teste ? <strong>True</strong> : <strong>False</strong></br>
+            média >= 7? <strong>"Aprovado"</strong>:<strong>"Reprovado"</strong>
+        </li>
     </ul>
-    <table>
-        <thead>
+    <div class="tabela">
+        <table>
+          <thead>
             <tr>
-                <th colspan="3" scope="colgroup">Simbolos Matemáticos</th>
-                <th>Incrementos</th>
-                <th>Pré-Incrementos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="3">()</td>
-                <td>x++</td>
-                <td>++x</td>
+                <th>Ordem de Precedência dos Operadores</th>
+                <th colspan="3">1º</th>
+                <th></th>
+                <th></th>
+                <th colspan="2">2º</th>
+                <th>3º do Primeiro ao Último</th>
             </tr>
             <tr>
-                <td colspan="3">**</td>
-                <td>x--</td>
-                <td>--x</td>
+              <th>Prioridade</th>
+              <th colspan="3" scope="colgroup">Simbolos Matemáticos</th>
+              <th>Incrementos</th>
+              <th>Pré-Incrementos</th>
+              <th colspan="2">Operadores Relacionais</th>
+              <th>Operadores Lógicos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>1º</td>
+              <td colspan="3">()</td>
+              <td>x++</td>
+              <td>++x</td>
+              <td>></td>
+              <td><</td>
+              <td>!</td>
             </tr>
             <tr>
-                <td>*</td>
-                <td>/</td>
-                <td>%</td>
-                <td></td>
-                <td></td>
+                <td>2º</td>
+              <td colspan="3">**</td>
+              <td>x--</td>
+              <td>--x</td>
+              <td>>=</td>
+              <td><=</td>
+              <td>&&</td>
             </tr>
             <tr>
-                <td colspan="2">+</td>
-                <td colspan="">-</td>
-                <td></td>
-                <td></td>
+                <td>3º</td>
+              <td>*</td>
+              <td>/</td>
+              <td>%</td>
+              <td></td>
+              <td></td>
+              <td>==</td>
+              <td></td>
+              <td>||</td>
             </tr>
-        </tbody>
-    </table>
-</body>
+            <tr>
+                <td>4º</td>
+              <td colspan="2">+</td>
+              <td colspan="">-</td>
+              <td></td>
+              <td></td>
+              <td>!</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </body>
 </html>
