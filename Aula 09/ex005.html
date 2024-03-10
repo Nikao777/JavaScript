@@ -15,7 +15,9 @@
   <h1>Iniciando estudos com DOM</h1>
   <p>Aqui vai o Resultado</p>
   <p>Apendendo a usar o <strong>DOM</strong> em JavaScript</p>
-  <div><p>Clique em mim</br></p></div>
+  <div id="msg">
+    <p>Clique em mim</br></p>
+  </div>
   <script>
     document.write(`${document.charset}</br></br>`);
 
@@ -23,10 +25,19 @@
 
     document.write(`${navigator.appName}</br></br>`);//Como o Navegador está se Comportando
 
-    
     const p1 = document.getElementsByTagName('p')[1];//0 para Parágrafo 1, 1 para o parágrafo 2, etc.
+
     document.write(`Está escrito Assim: ${p1.innerText}</br></br>`);
+
     document.write(`${p1.innerHTML}`)//innerHTML pega texto com Formatação. innerText pega somente o Texto Puro
+
+    let d = document.getElementById('msg')
+    d.style.background='red'
+    d.innerText = 'Estou Aguardando...'
+    document.getElementById('msg').innerText = 'Estou Aguardando...'//Versão Alternativa caso precise usar uma vez só
+
+    const y = document.querySelector('div#msg')
+    y.style.color='blue'
 
     document.body.style.backgroundColor='green';
     p1.style.color='darkblue';

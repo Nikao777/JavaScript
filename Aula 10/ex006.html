@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <style>
+    div#area{
+      background-color: rgb(42, 139, 42);
+      color: white;
+      height: 200px;
+      width: 200px;
+      text-align: center;
+      line-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="area" onclick="clicar()" onmousedown="sair()" onmouseout="sair()">
+    interaja...
+  </div>
+  <p>
+    Função em Js:
+    function ação(param){
+
+    }
+  </p>
+  <script>
+    let a = getElementById('area')//Funciona para todas as Funções
+
+    a.addEventListener('click', clicar)//esses três podem ir no local do HTML
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+
+    //mouseenter: para quando o mouse entrar no local
+    function entrar(){
+      a.innerText = 'Entrou!'
+    }
+
+    //mousemove: para quando o mouse mover dentro do local
+
+    //mousedown: para quando clicar com o mouse
+
+    //mouseup: quando soltar o click do botão
+
+    //click: apertar e soltar
+    function clicar(){
+      a.innerText = 'Clicou!'
+      a.style.backgroundColor = 'crimson'
+    }
+
+    //mouseout: quando o mouse sair do local
+    function sair(){
+      a.innerText = 'Saiu!'
+      a.style.backgroundColor = 'green'
+    }
+  </script>
+</body>
+</html>
