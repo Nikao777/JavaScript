@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, crimson 0%, red 50%, darkred 100%);
+            color: white;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            margin-left: 10px;
+        }
+        ol, ul{
+            list-style: none;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 40px;
+        }
+        th, td{
+            border: 1px solid white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Ordem de Procedencia dos Símbolos Maemáticos e JS</h1>
@@ -15,14 +45,48 @@
     </ol>
     <p> N1 += 20: Mesma coisa que N1 = N1 + 20, Mesma coisa para os Outros Símbolos</p>
     <ul>
-        <p>Incrementos</p>
+        <p>Incrementos:</p>
         <li>x++: Mesma Coisa que x + 1, como se estivesse em um for e só qunado eleacabar o número será Incrementado</li>
         <li>x--: Masma Coisa que x - 1</li>
     </ul>
     <ul>
-        <p>Pré-Incrementos</p>
+        <p>Pré-Incrementos:</p>
         <li>++x: Mesma Coisa que x + 1, mas ela ocorre antes</li>
         <li>--x: Masma Coisa que x - 1</li>
     </ul>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" scope="colgroup">Simbolos Matemáticos</th>
+                <th>Incrementos</th>
+                <th>Pré-Incrementos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">()</td>
+                <td>x++</td>
+                <td>++x</td>
+            </tr>
+            <tr>
+                <td colspan="3">**</td>
+                <td>x--</td>
+                <td>--x</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>/</td>
+                <td>%</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">+</td>
+                <td colspan="">-</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
