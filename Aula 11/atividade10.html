@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input{
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Você é de que País?</h1>
+    <input
+      type="text"
+      name="local"
+      id="local"
+      placeholder="Você é de que país?"
+    />
+    <input type="button" value="Verificar" onclick="verificar()" />
+    <div id="res"></div>
+
+    <script>
+      function verificar() {
+        let pais = document.getElementById("local").value;
+        let res = document.getElementById("res");
+
+        //let paisres = pais.charAt(0).toUpperCase() + pais.slice(1);
+        res.innerHTML = `Você Mora no/a ${pais.charAt(0).toUpperCase() + pais.slice(1)}<br/>`;
+
+        if (pais == "Brasil") {
+          res.innerHTML += `Você é Brasileiro <br/>`;
+        } else {
+          res.innerHTML += "Você é Estrangeiro";
+        }
+      }
+      //pais.charAt(0).toUpperCase() irá retornar o Caractere do valor (0), ou seja, a primeira letra e o uppercase colocará em letra Maiúscula e irá REMOVELÁ
+
+      //slice(1) vai pegar o resto do texto a partir do Segundo Caractere em diante, se fosse: slice(2), ia ser do Terceiro a Diante
+
+      //na Programação é Contado a Partir do 0
+    </script>
+  </body>
+</html>

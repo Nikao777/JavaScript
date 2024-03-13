@@ -1,11 +1,11 @@
 {
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontSize": 16,
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.tabSize": 2,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true 
-    },
-    "editor.formatOnSave": true
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true
 }
