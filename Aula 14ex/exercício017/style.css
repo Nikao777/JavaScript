@@ -41,13 +41,12 @@ footer{
 img{
   width: 300px;
   margin: auto;
-  display: inline-block;
+  display: block;
   padding-bottom: 20px;
 
 }
 input{
-  margin-bottom: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.279);
+  margin-bottom: 15px;
 }
 input#txtano{
   padding: 10px 30px;
