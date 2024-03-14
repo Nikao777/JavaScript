@@ -25,30 +25,19 @@ section{
   width: 500px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.409);
 }
-p.txt{
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 25px;
-}
+
 footer{
   color: white;
   text-align: center;
   background-color: black;
   border-radius: 10px;
-  margin: 30px 35px;
-  
-}
-img{
-  width: 300px;
-  margin: auto;
-  display: block;
-  padding-bottom: 20px;
-
+  margin: 5px 35px;
 }
 input{
   margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.305)
+  
 }
-input#txtano{
-  padding: 10px 30px;
-  width: 300px;
+p{
+  line-height: 30px;
 }
