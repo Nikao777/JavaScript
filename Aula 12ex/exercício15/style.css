@@ -45,3 +45,10 @@ img{
   padding-bottom: 20px;
 
 }
+input{
+  margin-bottom: 15px;
+}
+input#txtano{
+  padding: 10px 30px;
+  width: 300px;
+}
