@@ -36,8 +36,11 @@ footer{
 input{
   margin-bottom: 15px;
   border: 1px solid rgba(0, 0, 0, 0.305)
-  
+
 }
 p{
   line-height: 30px;
+}
+select{
+  padding: 20px;
 }
