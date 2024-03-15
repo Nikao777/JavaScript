@@ -4,41 +4,28 @@ function contar(){
   let pulo = document.getElementById('pulo').value
   let res = document.getElementById('res')
 
-  if (inicio.lenght == 0 || fim.lenght == 0 || pulo.lenght == 0){
-    alert('[ERRO]')
-  } else {
+  if (inicio.lenght == '' || fim.lenght == '' || pulo.lenght == ''){
+    alert('[ERRO] Há Valores não Informados')
+  } else{
     let i = Number(inicio)
     let f = Number(fim)
     let p = Number(pulo)
+
     if (p <= 0){
+      alert(`Número inválido, considerando Passo = 1`)
       p = 1
     }
+
     if (i < f){
       for (let c = i; c <= f; c += p){
         res.innerHTML += `${c} \u{1F449}`
       }
-    } else {
+    } else{
       for (let c = i; c >= f; c -= p){
         res.innerHTML += `${c} \u{1F449}`
       }
     }
-    res.innerHTML += `\u{1F3C1}`
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }res.innerHTML += `\u{1F3C1}`
 
 
 

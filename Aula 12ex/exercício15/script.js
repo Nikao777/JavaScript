@@ -1,16 +1,18 @@
 function verificar(){
   let data = new Date()
-  let ano = data.getFullYear()
+  const ano = data.getFullYear()
   let fAno = document.getElementById('txtano')
   let res = document.getElementById('res')
 
   if (fAno.value.length == 0 || fAno.value > ano){
     alert('[Erro] Verifique a Data e tente Novamente')
-  }else{
-    let fsex = document.getElementsByName('genero')
+  } else {
+    let fsex = document.getElementsByName('genero')//Tem que ser o Mesmo Name para as duas escolhas
+
     let idade = ano - Number(fAno.value)
+
     let genero = ''
-    img = document.createElement('img')//Cria a tag img no HTML
+    let img = document.createElement('img')//Cria a tag   img no HTML
     img.setAttribute('id', 'foto')//Coloca o id = "foto"
 
     if (fsex [0].checked){

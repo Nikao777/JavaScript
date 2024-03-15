@@ -1,18 +1,18 @@
 function contar(){
   let num = document.getElementById('num').value
-  let res = document.getElementById('res')
-  const localt = document.getElementById('localt')
+  let tabuada = document.getElementById('localt')
 
-  if (num == ''){
-    alert('Digite um Número')
+  if(num == ''){
+    alert('[ERRO] Digite um Número')
   } else{
-    localt.innerHTML = ''
-    for (let n = 1; n <= 10; n++) {
+    tabuada.innerHTML = ''
+    for(let n = 1; n <= 10; n++){
       let numero = Number(num)
-      let item = document.createElement('option')
-      item.text = `${numero} x ${n} = ${num*n}`
-      item.value = `tab${n}`
-      localt.appendChild(item)
+      let local = document.createElement('option')
+      local.text = (`${numero} x ${n} = ${n*numero}`)
+      local.value = 'tab${n}'
+
+      tabuada.appendChild(local)
     }
   }
 }
