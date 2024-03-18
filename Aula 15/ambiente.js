@@ -9,6 +9,6 @@ console.log(`O valor 9 está na posição ${pos}`)
 let ant = num.indexOf(7)
 if (ant == -1){
   console.log('O valor não foi encontrado')
-}else {
+} else {
   console.log(`O valor 3 está na posição ${ant}`)//irá dar -1 pos o valor que buscou não existe no array
 }
