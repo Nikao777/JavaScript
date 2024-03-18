@@ -3,7 +3,7 @@ let itens = document.getElementById('itens')
 let result = document.getElementById('res')
 let valores = []
 
-function qualificadoNum(n){
+function validarnum (n) {
   if (Number(n) >= 1 && Number(n) <= 100){
     return true
   } else {
@@ -11,18 +11,19 @@ function qualificadoNum(n){
   }
 }
 
-function inList(n, v){
-  if (v.indexOf(Number(n)) != -1){
+function inList(n, l) {
+  if (l.indexOf(n) != -1){
     return true
   } else {
     return false
   }
 }
 
-function adicionar(){
-  if (qualificadoNum(num) && !inList(num, valores)){
+
+function adicionar() {
+  if (validarnum(num) && !inList(num, itens))
     alert('Tudo Ok!')
-  } else {
-    alert ('O Número Digitado é Invalido ou já foi Digitado')
-  }
+    
+} else {
+  alert('O Número que digitou é inválido ou já foi digitado anteriormente')
 }

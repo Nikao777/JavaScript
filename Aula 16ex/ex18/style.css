@@ -30,8 +30,11 @@ select{
 }
 input{
   padding: 5px 75px;
-  border: 1px solid black;
+  border: none;
   margin: 20px;
+}
+input#num{
+  border-bottom: 2px solid black;
 }
 footer{
   text-align: center;
